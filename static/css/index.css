@@ -133,5 +133,15 @@ body {
   font-size: smaller;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 240px; /* Set the desired width */
+  height: auto; /* Adjust this to 'height: 100px;' if you want fixed height */
+  margin-right: 10px; /* Optional: adds space between images */
+}
 
 
