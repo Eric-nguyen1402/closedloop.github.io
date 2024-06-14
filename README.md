@@ -1,4 +1,4 @@
-# Language-Driven Closed-Loop Grasping with Model-Predictive Trajectory Replanning
+# Dynamic Robotic Grasping: A Combination of Real-Time Trajectory Planning and ML-Based Novel Object Pose Detection
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.

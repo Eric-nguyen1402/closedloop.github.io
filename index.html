@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Language-Driven Closed-Loop Grasping with Model-Predictive
-    Trajectory Replanning</title>
+  <title>Dynamic Robotic Grasping: A Combination of Real-Time
+    Trajectory Planning and ML-Based Novel Object Pose Detection</title>
   <link rel="icon" type="image/x-icon" href="static/pdfs/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -53,22 +53,18 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Language-Driven Closed-Loop Grasping with Model-Predictive
-              Trajectory Replanning</h1>
+            <h1 class="title is-1 publication-title">Dynamic Robotic Grasping: A Combination of Real-Time
+              Trajectory Planning and ML-Based Novel Object Pose Detection</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=T_LryjgAAAAJ&hl=en" target="_blank">Huy Hoang Nguyen</a><sup>1*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class="author-block">
-                  <a href="https://scholar.google.de/citations?user=H0GgsQ4AAAAJ&hl=de" target="_blank">Florian Beck</a><sup>2*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://scholar.google.com/citations?user=T_LryjgAAAAJ&hl=en" target="_blank">Huy Hoang Nguyen</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=qyExc4QAAAAJ&hl=en" target="_blank">Minh Nhat Vu</a><sup>2,4**</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=PH_GwWwAAAAJ&hl=de" target="_blank">Gerald Ebmer</a><sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://scholar.google.com/citations?user=qyExc4QAAAAJ&hl=en" target="_blank">Minh Nhat Vu</a><sup>2,4</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <span class="author-block">
                     <a href="https://www.csc.liv.ac.uk/~anguyen/" target="_blank">Anh Nguyen</a><sup>3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=ee4tJYgAAAAJ&hl=en" target="_blank">Andreas Kugi</a><sup>2,4</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://scholar.google.com/citations?user=mtBq1ewAAAAJ&hl=en&oi=ao" target="_blank">Zoltán Istenes</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -76,8 +72,6 @@
                     <span class="author-block"><sup>2</sup>ACIN - TU Wien</span>&nbsp;&nbsp;
                     <span class="author-block"><sup>3</sup>University of Liverpool</span>&nbsp;&nbsp;
                     <span class="author-block"><sup>4</sup>Austrian Institute of Technology</span>&nbsp;&nbsp;
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>&nbsp;&nbsp;
-                    <span class="eql-cntrb"><small><br><sup>**</sup>Corresponding Author</small></span>
                   </div>
                   <div class="logo-container">
                     <img
@@ -102,7 +96,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="https://youtu.be/PAODfJkVXJo" target="_blank"
+                      <a href="https://youtu.be/XZIpZKQPmBY" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-youtube"></i>
@@ -112,7 +106,7 @@
                   </span>
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -120,16 +114,16 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -148,10 +142,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Combining a vision module inside a closed-loop control system for a seamless movement of a robot in a manipulation task is challenging due to the inconsistent update rates between utilized modules. This is even more difficult in a dynamic environment, e.g., objects are moving. 
-            This paper presents a modular zero-shot framework for language-driven manipulation of (dynamic) objects through a closed-loop control system with real-time trajectory replanning and an online 6D object pose localization. 
-            By leveraging a vision language model via natural language commands, an object is segmented within 0.5s. 
-            Then, guided by natural language commands, a closed-loop system, including a unified pose estimation and tracking and online trajectory planning, is utilized to continuously track this object and compute the optimal trajectory in real time. This provides a smooth trajectory that avoids jerky movements and ensures the robot can grasp a non-stationary object. Experiment results exhibit the real-time capability of the proposed zero-shot modular framework for the trajectory optimization module to accurately and efficiently grasp moving objects, i.e., up to 30Hz update rates for the online 6D pose localization module and 10Hz update rates for the receding-horizon trajectory optimization. This highlights the modular framework's potential applications in robotics and human-robot interaction.</p>
+            This thesis explores integrating real-time grasping with 6-DoF pose estimation and online trajectory optimization to improve performance in challenging conditions like poor lighting and novel objects, crucial for industrial manufacturing. The D435i camera was chosen for its superior performance. Using Optitrack for ground truth, the study found the Foundation pose method more accurate and reliable than the Aruco method under static and dynamic conditions.
+
+Integrating online trajectory optimization improved grasping and placement, addressing camera calibration and frame transformation issues. Future work includes real-time object detection and language-guided grasping commands to enhance system utility.
+
+This research demonstrates the potential of advanced pose estimation and trajectory planning technologies to enhance industrial automation with more precise and adaptive robotic interactions.</p>
         </div>
       </div>
     </div>
@@ -160,11 +155,12 @@
 <!-- End paper abstract -->
 
 <!-- Paper video. -->
+<!-- Paper video. -->
 <div class="columns is-centered has-text-centered">
   <div class="column is-two-thirds">
     <h2 class="title is-3">Video</h2>
     <div class="publication-video">
-      <iframe src="https://youtu.be/PAODfJkVXJo"
+      <iframe src="https://www.youtube.com/embed/XZIpZKQPmBY?modestbranding=1&autohide=1&showinfo=0&controls=1"
         frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
     </div>
   </div>
@@ -175,73 +171,27 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Experiment</h2>
+      <h2 class="title is-3">Experiment in Realsense D400 Series</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-blue-block">
-          <video poster="" id="blue-block" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/RAL-blue-block.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-D405">
+          <img src="./static/images/D405.png" id="D405" alt="Blue Block" height="100%">
+          <div class="subtitle has-text-centered">D405</div>
         </div>
-        <div class="item item-metal">
-          <video poster="" id="metal" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_1.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-D415">
+          <img src="./static/images/D415.png" id="D415" alt="Metal" height="100%">
+          <div class="subtitle has-text-centered">D415</div>
         </div>
-        <div class="item item-orange-block">
-          <video poster="" id="orange-block" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_2.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-D435">
+          <img src="./static/images/D435.png" id="D435" alt="Orange Block" height="100%">
+          <div class="subtitle has-text-centered">D435</div>
         </div>
-        <div class="item item-plier">
-          <video poster="" id="plier" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_3.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-D435i">
+          <img src="./static/images/D435i.png" id="D435i" alt="Plier" height="100%">
+          <div class="subtitle has-text-centered">D435i</div>
         </div>
-        <div class="item item-scissor">
-          <video poster="" id="scissor" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_4.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-stripper">
-          <video poster="" id="stripper" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_5.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-timer">
-          <video poster="" id="timer" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_6.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-eraser">
-          <video poster="" id="eraser" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_7.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-black-tool">
-          <video poster="" id="black-tool" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_8.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-drill">
-          <video poster="" id="drill" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_9.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-silver-block">
-          <video poster="" id="silver-block" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_10.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-D455">
+          <img src="./static/images/D455.png" id="D455" alt="Scissor" height="100%">
+          <div class="subtitle has-text-centered">D455</div>
         </div>
       </div>
     </div>
@@ -262,17 +212,41 @@
 
             <div class="container">
               <div class="columns is-vcentered  is-centered">
-                <img src="./static/images/result.png" alt="results" />
+                <img src="./static/images/result1.png" alt="results1" />
                 </br>
               </div>
               <br>
               <h2 class="subtitle has-text-centered">
-                Results from our method show that the 3D position trajectory of the object closely matches the ground truth measurements(Opitrack). It is important to note that these measurements are transformed to the camera origin, which is approximately
-                1 m away from the object. The maximum positional error observed is approximately 0.02 m, representing 2% relative
-                to the distance to the camera. The orientation error is constrained, with a maximum error of 0.15 rad in the roll angle.
+                Results from our method show that the Foundation pose trajectory is notably more accurate and
+                consistent than the Aruco system's trajectory in dynamic conditions. This makes our
+                method more suitable for applications requiring precise and reliable motion tracking.
+                The Foundation trajectory displays a high level of consistency, with slight variances
+                observed potentially within acceptable ranges for many applications. Compared to the
+                previously analyzed Aruco trajectory, the Foundation pose shows significant improvement
+                in maintaining trajectory alignment with the ground truth. The Aruco system, while
+                effective in certain aspects, shows potential weaknesses in dealing with dynamic tracking,
+                as indicated by the noisier and more fluctuating trajectory. This might limit its use in
+                applications requiring high precision and stability.
               </h2>
             </div>
-
+            <br>
+            <br>
+            <div class="container">
+              <div class="columns is-vcentered  is-centered">
+                <img src="./static/images/result2.png" alt="results2" />
+                </br>
+              </div>
+              <br>
+              <h2 class="subtitle has-text-centered">
+                Furthermore, our approach shows robust performance in tracking translation, particularly along the
+                Z-axis, where errors are minimal, suggesting notable altitude stability. Nevertheless,
+                greater variability in translation errors on the X and Y axes and significant orientation
+                errors across all axes, underscores the system's challenges in
+                managing complex rotations and rapid directional changes. These aspects are critical
+                for applications that demand precise depth measurements, such as augmented reality or
+                robotic navigation.
+              </h2>
+            </div>
             <br>
             <br>
 
@@ -357,18 +331,29 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
 <section class="section" id="acknowledgements">
   <div class="container content is-max-desktop">
     <h2 class="title">Acknowledgements</h2>
+    <p>I would like to extend my profound gratitude to my supervisor, Dr. techn. Minh Nhat Vu,
+      for his unwavering support and invaluable lessons throughout my research journey. His
+      remarkable advice has significantly enriched my knowledge and experience, contributing
+      immensely to the timely completion of my thesis with outstanding results.
+      Additionally, I am grateful to Assoc. Prof. Zoltán Istenes and Assoc. Prof. Anh
+      Nguyen for their guidance and insights, which have been pivotal in shaping the direction
+      of my work. I also wish to acknowledge my colleague at TU Wien, whose assistance and
+      collaboration were instrumental during the project.
+      Most importantly, I am deeply thankful for the unwavering support from my family,
+      whose encouragement has been my cornerstone. I am eager to further explore the field of
+      robotics, with the hope of uncovering new insights and developments.<p>
     <p>We borrow the page template from  <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. Special thanks to them!
       <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
       Commons Attribution-ShareAlike 4.0 International License</a>.
