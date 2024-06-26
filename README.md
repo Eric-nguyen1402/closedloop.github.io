@@ -1,4 +1,5 @@
 # Dynamic Robotic Grasping: A Combination of Real-Time Trajectory Planning and ML-Based Novel Object Pose Detection
+[Link project](https://eric-nguyen1402.github.io/closedloop.github.io/)
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
